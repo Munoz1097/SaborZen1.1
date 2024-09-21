@@ -1,0 +1,30 @@
+
+.task-search {
+  
+  margin: 300px;
+  padding: 300px;
+
+}
+.SearchFrame{ 
+  transition: all 0.25s ease;
+  text-align: left;
+  min-width: 80vw;
+  max-width: 90vw;
+  padding: auto;
+  padding: .4vw 1em;
+  margin: auto;
+  margin: 1vw 8vw;
+  background-color: #a7abed4a;
+  outline: none;
+  background-color: transparent;
+  border: .1vw #000 solid;
+  border-bottom: .2vw #000 solid;
+}
+.SearchFrame:hover{
+  outline: none;
+  background:linear-gradient(transparent,rgba(142, 167, 226, 0.753) );
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+
+}
