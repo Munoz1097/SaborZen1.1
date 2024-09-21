@@ -1,10 +1,10 @@
 
-function RecipeItem({Recipe, index}){
+function RecipeItem({Recipe}){
     const handelEdit = ()=>{}
     const removeRecipe = ()=>{}
     return(
         <div>
-            <small>Receta: {Recipe}</small>
+            <small>{Recipe}</small>
         </div>
     )
 }

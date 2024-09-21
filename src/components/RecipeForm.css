@@ -14,9 +14,12 @@ form{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     transition: all 0.2s ease;
+    font-size: 1em;
+    color: #000;
 
 }
 .CreateRecipe-select{
+    
     appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -30,7 +33,7 @@ form{
 	background: ffffff67;
 	color: #7b7b7b;
 	font-size: 1em;
-	color: #531a1a;
+	color: #000000;
 	font-family: 
 	'Quicksand', sans-serif;
 	border:2px solid rgba(0,0,0,0.2);
@@ -52,6 +55,7 @@ form{
     border: .2vw transparent solid;
     border-radius: 10px;
     box-shadow: #4769a8 300px solid;
+    color: #000000;
 }
 
 .InputFrame:hover{
@@ -59,6 +63,7 @@ form{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: #1a2e53 2px solid;
+    color: #000000;
 
 
 }
@@ -66,6 +71,7 @@ form{
     background-color: #ffffff67;
     border-bottom: #1a2e53 2px solid;
     outline-style: none;
+    color: #000000;
 }
 .CreateRecipe-select{
     font-size: 1vw;
@@ -76,6 +82,7 @@ form{
     text-align: center;
     border: .2vw #75829b solid;
     border-radius: 10px;
+    color: #000000;
 }
 
 .AddRecipe{
@@ -83,6 +90,7 @@ form{
     background-color: #6b90db;
     border: .2vw #c1cbde solid;
     border-radius: 25px;
+    color: #000000;
 }
 .AddRecipe:hover{
 
@@ -90,4 +98,5 @@ form{
     color: #1a2e53 1s;
     background-color: #c1d6ff;
     border: .2vw #1a2e53 solid;
+    color: #000000;
 }

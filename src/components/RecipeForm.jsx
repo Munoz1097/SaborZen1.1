@@ -1,55 +1,56 @@
-import { useState } from 'react';
-import("./RecipeForm.css")
-
-function RecipeForm({}){
-///se definen cinco constantes que almacenaran los datos respectivos de la nueva receta creada///
-    const [recipeName, setName]= useState('')
-    const [Time, setTime]= useState('')
-    const [Dificult, setDififult]= useState('')
-    const [Category, setCategory]= useState("")
-    const [Description, setDescription]= useState("")
-///Se establece la constante para poder guardar las recetas 
+import { useState } from "react";
+import "./RecipeForm.css"
+function RecipeForm(addRecipe){
+    const [newRecipe,setNewRecipe] = useState("")
+    const [category,setCategory] = useState("")
+    const [dificult,setDificult] = useState("")
+    const [time,setTime] = useState("")
+    const [description,setDescription] = useState("")
+    
     const handleSubmit = (e)=>{
         e.preventDefault()
-        addTask({
-/// se reciben los datos ingresados gracias a los inputs y se relacionan con la receta creada
-            Name: recipeName,
-            Category: Category,
-            Time: Time,
-            Description: Description,
-    } )
-    const recipeName= ("")    
-    const Category= ("")    
-    const Description= ("")    
-}
+        console.log("Agreganto Receta")
+        console.log("Receta :", newRecipe)
+        console.log("Categoria :", category)
+        console.log("fecha :", time)
+        console.log("Dificultad :", dificult)
+        console.log("Descripcion :", description)
+        addTask({create: new Recipe(),
+                    name: newRecipe,
+                    category: category,
+                    time:time,
+                    dificult:dificult,
+                    description:description,
+
+                    
+        })
+
+        console.log(addRecipe)
     
+    }
     return(
-/// se crea el formulario del cual se van a estraer 
         <form className="recipe-form" onSubmit={(e) => handleSubmit(e)}>
 
         <input 
+            className="InputFrame"
             type="text"
-            className='InputFrame'
             placeholder='Agregar receta'
-            value= {recipeName}
-            onChange={(e)=>setName(e.target.value)} />
+            value= {newRecipe}
+            onChange={(e)=>setNewRecipe(e.target.value)} />
         <input 
+            className="InputFrame" 
             type="number"
-            className='InputFrame'
-            placeholder='Duración en minutos'
-            value={Time} 
+            placeholder='Duracion en minutos'
+            value={time} 
             onChange={(e)=>setTime(e.target.value)}/>
-        <i>
-        <select  className="CreateRecipe-select"value={Dificult} onChange={(e)=>setDififult(e.target.value)}>
+        <select className="CreateRecipe-select" value={dificult} onChange={(e)=>setDificult(e.target.value)}>
             <option value="">Dificultad</option>
             <option value="Facil">Facil</option>
             <option value="Medio">Medio</option>
             <option value="Dificil">Dificil</option>
         </select>
-        </i>
-        <i>
-        <select className="CreateRecipe-select" value={Category} onChange={(e)=>setCategory(e.target.value)}>
-            <option value="">Categoría</option>
+        <select className="CreateRecipe-select" value={category} onChange={(e)=>setCategory(e.target.value)}>
+            <option value="">categoria</option>
             <option value="Desayuno">Desayuno</option>
             <option value="Almuerzo">Almuerzo</option>
             <option value="Cena">Cena</option>
@@ -57,19 +58,16 @@ function RecipeForm({}){
             <option value="Vegetariana">Vegetariana</option>
             <option value="Bebidas">Bebidas</option>
         </select>
-        </i>
         <input 
+            className="InputFrame" 
             type="text"
-            className='InputFrame'
             placeholder='Descripción...' 
-            value={Description}
+            value={description}
             onChange={setDescription}/>
-        <button className='AddRecipe'>Agregar</button>
+        <button className="AddRecipe">Agregar</button>
         </form>
 
+    
     )
-
-
-
 }
 export default RecipeForm;

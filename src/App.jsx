@@ -4,17 +4,20 @@ import RecipeSearch from "./components/RecipeSearch"
 import RecipeItem from "./components/RecipeItem"
 import RecipeForm from "./components/RecipeForm"
 function App() {
-  const [Recipe, setNewRecipe]= useState([]);
+  const Recipe =[
+    { name: "Hambuerger",category:"Lunch", time:40, dificult:"Easy",description:"Delicious Hamburger"}
+
+  ];
   const [SearchQuery, setSearchQuery] = useState("");
-  const addRecipe= (newRecipe) => {
-    setNewRecipe([...Recipe, Recipe])
+  const addRecipe = (Recipe) => {
+    Recipe.push(Recipe)
   }
 
   return(
     <>
     <Header/>
     <RecipeSearch setSearchQuery={setSearchQuery}/>
-    <RecipeForm/>
+    <RecipeForm addRecipe={addRecipe}/>
     <RecipeItem/>
 
     </>
