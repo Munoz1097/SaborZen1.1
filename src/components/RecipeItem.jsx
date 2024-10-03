@@ -22,12 +22,13 @@ function RecipeItem({ recipe, editRecipe, removeRecipe,index}) {
       {isEditing ? (
         <div className="edit-form">
           <input
+            className="edit-form_input"
             type="text"
             value={newName}
             onChange={(e) => setNewName(e.target.value)}
             placeholder="Nombre de la receta"
           />
-          <select value={newCategory} onChange={(e) => setNewCategory(e.target.value)}>
+          <select className="edit-form_select" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}>
             <option value="Desayuno">Desayuno</option>
             <option value="Almuerzo">Almuerzo</option>
             <option value="Cena">Cena</option>
@@ -36,22 +37,24 @@ function RecipeItem({ recipe, editRecipe, removeRecipe,index}) {
             <option value="Bebidas">Bebidas</option>
           </select>
           <input
+            className="edit-form_input"
             type="number"
             value={newTime}
             onChange={(e) => setNewTime(e.target.value)}
             placeholder="Tiempo en minutos"
           />
-          <select value={newDifficulty} onChange={(e) => setNewDifficulty(e.target.value)}>
+          <select className="edit-form_select" value={newDifficulty} onChange={(e) => setNewDifficulty(e.target.value)}>
             <option value="Facil">Fácil</option>
             <option value="Medio">Medio</option>
             <option value="Dificil">Difícil</option>
           </select>
           <textarea
+            className="edit-form_input"
             value={newDescription}
             onChange={(e) => setNewDescription(e.target.value)}
             placeholder="Descripción..."
           />
-          <button onClick={edit}
+          <button className="BotonEditar" onClick={edit}
         
         >Guardar</button>
         </div>

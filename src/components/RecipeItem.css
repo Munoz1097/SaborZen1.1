@@ -1,0 +1,64 @@
+.BotonEditar{
+    padding: 0;
+    margin: 0;
+    padding: .5vw;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    background-color: #7190d8bc;
+    border: .2vw #c1cbde solid;
+    border-radius: 5px;
+    color: #000000;
+    width: 9vw;
+    font-size: 1vw;
+    align-self: center;
+}
+
+.BotonEditar:hover{
+    font-size: 1vw;
+    font-weight: bold;
+    color: #1a2e53 1s;
+    background-color: #c1d6ff;
+    border: .2vw #1a2e53 solid;
+    color: #000000;
+}
+
+.edit-form{
+    padding: 0;
+    margin: 0;
+    padding: auto;
+    margin: auto;
+    background-color: rgba(150, 216, 216, 0.411);
+    border: .7vw #1a2e53 solid;
+    border-radius: 15px;
+}
+.edit-form_input{
+    align-items: center;
+    align-content: center;
+    vertical-align:text-bottom;
+    padding: .6vw;
+    margin: .6vw;
+    background-color: rgba(150, 216, 216, 0.411);
+    border: .5vw #1a2e53 solid;
+    border-radius: 15px;
+
+}
+
+.edit-form_input:hover{
+    background-color: rgba(169, 240, 240, 0.917);
+    border: .5vw #6d36a5 solid;
+    border-radius: 15px;
+
+}
+
+.edit-form_select{
+    align-items: center;
+    align-content: center;
+    vertical-align:text-bottom;
+    padding: .6vw;
+    margin: .6vw;
+    background-color: rgba(150, 216, 216, 0.411);
+    border: .5vw #1a2e53 solid;
+    border-radius: 15px;
+
+}
