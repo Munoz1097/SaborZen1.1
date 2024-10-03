@@ -1,7 +1,7 @@
 import RecipeItem from './RecipeItem';
 import './RecipeList.css';
 
-function RecipeList({ recipes, toggleRecipeCompletion, removeRecipe }) {
+function RecipeList({ recipes, editRecipe, removeRecipe }) {
     return (
       <ul className="recipe-list">
         {recipes.map((recipe, index) => (
@@ -9,7 +9,7 @@ function RecipeList({ recipes, toggleRecipeCompletion, removeRecipe }) {
             key={index}
             recipe={recipe}
             index={index}
-            toggleRecipeCompletion={toggleRecipeCompletion}
+            editRecipe={editRecipe}
             removeRecipe={removeRecipe}
           />
         ))}

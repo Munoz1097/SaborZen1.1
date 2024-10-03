@@ -20,13 +20,13 @@ function RecipeForm({ addRecipe }) {
         console.log("Descripción:", description);
 
         // Llamada a la función 'addRecipe' que se pasa como prop
-        addRecipe({
-            name: newRecipe,
-            category: category,
-            time: time,
-            difficulty: difficulty,
-            description: description,
-        });
+        addRecipe(
+            newRecipe,
+            category,
+            time,
+            difficulty,
+            description,
+        );
 
         // Limpia los campos del formulario después de agregar la receta
         setNewRecipe("");

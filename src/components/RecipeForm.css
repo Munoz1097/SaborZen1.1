@@ -8,7 +8,7 @@ form{
     width: 50vw;
     display: inline-block;
     background: linear-gradient(#cac6f0, transparent);
-    border: .5vw #7397de solid;
+    border: .5vw #e4aeae73 solid;
     border-bottom: transparent;
     border-radius: 25px;
     border-bottom-left-radius: 0;
@@ -70,6 +70,8 @@ form{
 .InputFrame:focus{
     background-color: #ffffff67;
     border-bottom: #1a2e53 2px solid;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     outline-style: none;
     color: #000000;
 }
@@ -80,20 +82,29 @@ form{
     padding: auto;
     padding: 0.5vw 0;
     text-align: center;
-    border: .2vw #75829b solid;
+    border: .2vw #373e9d8a solid;
     border-radius: 10px;
     color: #000000;
 }
+.CreateRecipe-select:hover{
+    background-color: #bbc9e9bc;
 
-.AddRecipe{
-    color: #fff;
-    background-color: #6b90db;
-    border: .2vw #c1cbde solid;
-    border-radius: 25px;
-    color: #000000;
 }
-.AddRecipe:hover{
 
+
+.AddRecipe {
+    color: #fff;
+    background-color: #7190d8bc;
+    border: .2vw #c1cbde solid;
+    border-radius: 5px;
+    color: #000000;
+    width: 9vw;
+    font-size: 1vw;
+}
+
+
+.AddRecipe:hover{
+    font-size: 1vw;
     font-weight: bold;
     color: #1a2e53 1s;
     background-color: #c1d6ff;

@@ -1,5 +1,4 @@
-import "./Header.css"
-
+import "./HEader.css"
 function Header() {
     return (
         <header className='Header'>
